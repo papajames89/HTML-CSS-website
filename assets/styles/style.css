@@ -1,0 +1,384 @@
+* {
+    background-color: #000;
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    text-align: center;
+}
+
+.tekst {
+    font-family: helvetica-neue, arial, sans-serif;
+    font-size: 18px;
+    font-weight: 500;
+    letter-spacing: 0.36px;
+    line-height: 25.2px;
+    color: #fff;
+    margin-left: 5vw;
+    margin-right: 5vw;
+}
+
+/* .tekst-naglowek p {
+    max-width:
+} */
+
+.tekst-naglowek {
+    font-family: arial, sans-serif;
+    font-size: 90px;
+    font-weight: 700;
+    color: #fff;
+    margin-bottom: 40px;
+}
+
+.flaga {
+    max-height: 150px;
+    width: auto;
+}
+
+
+.container {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.contact {
+    background-color: black;
+    position: fixed;
+    height: 100vh;
+    width: 50vw;
+    top: 0;
+    display: none;
+}
+
+.left {
+    flex: 1;
+    margin-top: 40px;
+    margin-bottom: 40px;
+}
+
+.right {
+    flex: 1;
+    background-image: url(../src/2.jpg.jpg);
+    background-position: center;
+    background-size: cover;
+}
+
+
+.header {
+    height: auto;
+    margin-top: 2rem;
+
+}
+
+.middle {
+    height: auto;
+    margin: 80px 0px 0px 0px;
+
+}
+
+.footer {
+    height: auto;
+    width: 92px;
+    margin: 0 auto;
+    position: relative;
+    top: 150px;
+    padding-bottom: 10px;
+}
+
+.footer:hover .use-icon {
+    background-color: grey;
+}
+
+.facebook-ico {
+    width: 16px;
+    height: 16px;
+    transition: filter 100ms ease;
+    margin: 2px;
+    background-color: white;
+
+}
+
+.facebook-ico:hover {
+    filter: brightness(300%);
+}
+
+.instagram-ico {
+    width: 16px;
+    height: 16px;
+    transition: filter 100ms ease;
+    margin: 2px;
+    background-color: white;
+}
+
+.instagram-ico:hover {
+    filter: brightness(300%);
+}
+
+.linkedin-ico {
+    width: 16px;
+    height: 16px;
+    transition: filter 100ms ease;
+    margin: 2px;
+    background-color: white;
+}
+
+.linkedin-ico:hover {
+    filter: brightness(300%);
+}
+
+.youtube-ico {
+    width: 16px;
+    height: 16px;
+    transition: filter 100ms ease;
+    margin: 2px;
+    background-color: white;
+}
+
+.youtube-ico:hover {
+    filter: brightness(300%);
+}
+
+.menu {
+    display: inline-block;
+    margin-top: 40px;
+}
+
+.przycisk-menu {
+    display: inline-block;
+    width: auto;
+    height: auto;
+    margin: 16px 7px;
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 1.82px;
+    font-style: normal;
+    color: white;
+    font-family: futura-pt, sans-serif;
+    background-color: black;
+    border: 2px solid white;
+    transition: background-color 170ms ease-in-out, color 170ms ease-in-out;
+    text-transform: uppercase;
+    text-decoration-style: solid;
+    text-decoration: none;
+    padding-top: 13px;
+    padding-right: 17px;
+    padding-bottom: 13px;
+    padding-left: 17px;
+    cursor: pointer;
+}
+
+.przycisk-menu:hover {
+    background-color: white;
+    color: black;
+}
+
+@media screen and (max-width: 1150px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100vh;
+    }
+
+    .left {
+        height: 40vh;
+    }
+
+    .right {
+        flex: auto;
+        height: 50vh;
+    }
+
+    .header {
+        height: auto;
+        margin: auto;
+    }
+
+    .middle {
+        height: auto;
+        margin: auto;
+
+    }
+
+    .footer {
+        height: auto;
+        position: relative;
+        top: 60px;
+
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    .tekst {
+        font-size: 16px;
+    }
+
+    .tekst-naglowek {
+        font-size: 50px;
+    }
+
+    .flaga {
+        max-height: 100px;
+    }
+
+    .left {
+        padding-left: 20px;
+        padding-right: 20px;
+        height: 30vh;
+    }
+
+    .right {
+        height: 70vh;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .header {
+        height: auto;
+    }
+
+    .middle {
+        height: auto;
+
+    }
+
+    .footer {
+        height: auto;
+        position: relative;
+        top: 0px;
+
+    }
+
+    .przycisk-menu {
+        font-size: 10px;
+        display: flex;
+        flex-direction: column;
+        margin-left: 6vw;
+        margin-right: 6vw;
+    }
+}
+
+@media screen and (max-height: 855px) {
+    .footer {
+        top: 60px;
+    }
+}
+
+@media screen and (max-height: 765px) {
+    .footer {
+        top: 30px;
+    }
+}
+
+@media screen and (max-height: 420px) {
+    .container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        height: 100vh;
+    }
+
+    .left {
+        flex: 1;
+        height: 100%;
+    }
+
+    .right {
+        flex: 1;
+        height: 0%;
+    }
+
+    .tekst {
+        font-size: 16px;
+    }
+
+    .tekst-naglowek {
+        font-size: 50px;
+        margin: 10px 0px;
+    }
+
+    .header {
+        margin: auto;
+        margin-top: 10px;
+    }
+
+    .middle {
+        margin: auto;
+    }
+
+    .footer {
+        margin: auto;
+        position: relative;
+        display: block;
+        top: 0px;
+    }
+
+    .menu {
+        margin: auto;
+        margin-bottom: 10px;
+    }
+
+    .flaga {
+        margin: auto;
+    }
+}
+
+
+
+@font-face {
+    font-family: futura-pt;
+    src: url(https://use.typekit.net/af/ae4f6c/000000000000000000010096/27/l?subset_id=2&fvd=n3&v=3) format("woff2"),
+        url(https://use.typekit.net/af/ae4f6c/000000000000000000010096/27/d?subset_id=2&fvd=n3&v=3) format("woff"),
+        url(https://use.typekit.net/af/ae4f6c/000000000000000000010096/27/a?subset_id=2&fvd=n3&v=3) format("opentype");
+    font-weight: 300;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: futura-pt;
+    src: url(https://use.typekit.net/af/9b05f3/000000000000000000013365/27/l?subset_id=2&fvd=n4&v=3) format("woff2"),
+        url(https://use.typekit.net/af/9b05f3/000000000000000000013365/27/d?subset_id=2&fvd=n4&v=3) format("woff"),
+        url(https://use.typekit.net/af/9b05f3/000000000000000000013365/27/a?subset_id=2&fvd=n4&v=3) format("opentype");
+    font-weight: 400;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: futura-pt;
+    src: url(https://use.typekit.net/af/2cd6bf/00000000000000000001008f/27/l?subset_id=2&fvd=n5&v=3) format("woff2"),
+        url(https://use.typekit.net/af/2cd6bf/00000000000000000001008f/27/d?subset_id=2&fvd=n5&v=3) format("woff"),
+        url(https://use.typekit.net/af/2cd6bf/00000000000000000001008f/27/a?subset_id=2&fvd=n5&v=3) format("opentype");
+    font-weight: 500;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: futura-pt;
+    src: url(https://use.typekit.net/af/309dfe/000000000000000000010091/27/l?subset_id=2&fvd=n7&v=3) format("woff2"),
+        url(https://use.typekit.net/af/309dfe/000000000000000000010091/27/d?subset_id=2&fvd=n7&v=3) format("woff"),
+        url(https://use.typekit.net/af/309dfe/000000000000000000010091/27/a?subset_id=2&fvd=n7&v=3) format("opentype");
+    font-weight: 700;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: futura-pt;
+    src: url(https://use.typekit.net/af/cf3e4e/000000000000000000010095/27/l?subset_id=2&fvd=i4&v=3) format("woff2"),
+        url(https://use.typekit.net/af/cf3e4e/000000000000000000010095/27/d?subset_id=2&fvd=i4&v=3) format("woff"),
+        url(https://use.typekit.net/af/cf3e4e/000000000000000000010095/27/a?subset_id=2&fvd=i4&v=3) format("opentype");
+    font-weight: 400;
+    font-style: italic;
+}
+
+@font-face {
+    font-family: futura-pt;
+    src: url(https://use.typekit.net/af/eb729a/000000000000000000010092/27/l?subset_id=2&fvd=i7&v=3) format("woff2"),
+        url(https://use.typekit.net/af/eb729a/000000000000000000010092/27/d?subset_id=2&fvd=i7&v=3) format("woff"),
+        url(https://use.typekit.net/af/eb729a/000000000000000000010092/27/a?subset_id=2&fvd=i7&v=3) format("opentype");
+    font-weight: 700;
+    font-style: italic;
+}
